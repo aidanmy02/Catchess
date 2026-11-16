@@ -117,3 +117,16 @@ SendMessageA PROTO,		hWnd:DWORD,\
 ; Source: https://learn.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-showwindow
 ShowWindow PROTO,		hWnd:DWORD,\
 						nCmdShow:DWORD
+
+; Source: https://learn.microsoft.com/en-us/windows/win32/api/wingdi/nf-wingdi-transparentblt
+TransparentBlt PROTO,	hdcDest:DWORD,\
+						xoriginDest:DWORD,\
+						yoriginDest:DWORD,\
+						wDest:DWORD,\
+						hDest:DWORD,\
+						hdcSrc:DWORD,\
+						xoriginSrc:DWORD,\
+						yoriginSrc:DWORD,\
+						wSrc:DWORD,\
+						hSrc:DWORD,\
+						crTransparent:DWORD
