@@ -1,3 +1,7 @@
+; Graphical Libraries
+INCLUDELIB Gdi32.lib	; Source:	https://learn.microsoft.com/en-us/windows/win32/gdi/windows-gdi
+INCLUDELIB Msimg32.lib	; Source:	https://learn.microsoft.com/en-us/windows/win32/api/wingdi/nf-wingdi-transparentblt
+
 MSGSTRUCT STRUCT
 	hWnd DWORD ?
 	message DWORD ?

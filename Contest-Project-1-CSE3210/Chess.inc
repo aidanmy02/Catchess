@@ -8,8 +8,6 @@ OPTION PROC:PRIVATE
 INCLUDELIB Kernel32.lib
 INCLUDELIB User32.lib	; Sources:	Textbook and https://learn.microsoft.com/en-us/cpp/assembler/masm/includelib-masm?view=msvc-170
 						;			https://learn.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-registerclassa
-INCLUDELIB Gdi32.lib	; Source:	https://learn.microsoft.com/en-us/windows/win32/gdi/windows-gdi
-INCLUDELIB Msimg32.lib	; Source:	https://learn.microsoft.com/en-us/windows/win32/api/wingdi/nf-wingdi-transparentblt
 
 ; Global Constants
 NULL EQU 0
@@ -92,8 +90,6 @@ MOVESTRUCT STRUCT
 	sqrColor BYTE ?
 MOVESTRUCT ENDS
 
-
-
 BOARDSTRUCT STRUCT
 	_a BYTE WROOK,	WPAWN,	0,	0,	0,	0,	BPAWN,	BROOK
 	_b BYTE WKNIGHT,WPAWN,	0,	0,	0,	0,	BPAWN,	BKNIGHT
@@ -108,9 +104,6 @@ BOARDSTRUCT ENDS
 EXTERNDEF move:MOVESTRUCT
 EXTERNDEF hWndMain:DWORD
 EXTERNDEF prevMove:MOVESTRUCT
-
-; For passing messages
-EXTERNDEF msg:MSGSTRUCT
 
 ; Subroutine Prototypes
 BoardProc PROTO
