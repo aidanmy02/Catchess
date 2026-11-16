@@ -60,3 +60,12 @@ EndPaint PROTO,			hWnd:DWORD,\
 FillRect PROTO,			hDC:DWORD,\
 						lprc:DWORD,\			; pointer to RECT
 						hbr:DWORD
+
+; Source: https://learn.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-getdc
+GetDC PROTO,			hWnd:DWORD
+
+; Source: https://learn.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-getmessage
+GetMessageA PROTO,		lpMsg:DWORD,\
+						hWnd:DWORD,\
+						wMsgFilterMin:DWORD,\
+						wMsgFilterMax:DWORD
