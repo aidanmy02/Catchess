@@ -90,3 +90,12 @@ MessageBoxA PROTO,		hWnd:DWORD,\
 						lpTEXT:DWORD,\
 						lpCaption:DWORD,\
 						uType:DWORD
+
+; Source: https://learn.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-postmessagea
+PostMessageA PROTO,		hWnd:DWORD,\
+						msg:DWORD,\
+						wParam:DWORD,\
+						lParam:DWORD
+
+; Source: https://learn.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-postquitmessage
+PostQuitMessage PROTO,	nExitCode:DWORD

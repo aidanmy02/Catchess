@@ -135,15 +135,6 @@ WinMain PROTO,			hInstance:DWORD,\
 						nShowCmd:DWORD
 
 ; System Call Prototypes and Sources for Information
-; Source: https://learn.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-postmessagea
-PostMessageA PROTO,		hWnd:DWORD,\
-						msg:DWORD,\
-						wParam:DWORD,\
-						lParam:DWORD
-
-; Source: https://learn.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-postquitmessage
-PostQuitMessage PROTO,	nExitCode:DWORD
-
 ; Source: https://learn.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-registerclassa
 RegisterClassExA PROTO,	wndClassPTR:DWORD
 
