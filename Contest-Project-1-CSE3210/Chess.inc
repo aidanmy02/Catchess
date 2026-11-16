@@ -136,15 +136,6 @@ WinMain PROTO,			hInstance:DWORD,\
 
 ; System Call Prototypes and Sources for Information
 
-; Sources: https://learn.microsoft.com/en-us/windows/win32/api/processthreadsapi/nf-processthreadsapi-createthread
-;		   https://learn.microsoft.com/en-us/windows/win32/procthread/creating-threads
-CreateThread PROTO,		lpThreadAttributes:DWORD,\
-						dwStackSize:DWORD,\
-						lpStartAddress:DWORD,\
-						lpParameter:DWORD,\
-						dwCreationFlags:DWORD,\
-						lpThreadId:DWORD
-
 ; Source: https://learn.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-createwindowexa
 CreateWindowExA PROTO,	dwExStyle:DWORD,\
 						lpClassName:DWORD,\
