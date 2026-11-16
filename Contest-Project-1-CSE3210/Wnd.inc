@@ -76,3 +76,11 @@ GetModuleHandleA PROTO,	lpModuleName:DWORD
 ; Source: https://learn.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-loadcursora
 LoadCursorA PROTO,		hInstance:DWORD,\
 						lpCursorName:DWORD
+
+; Source: https://learn.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-loadimagea
+LoadImageA PROTO,		hInstance:DWORD,\
+						lpName:DWORD,\
+						uType:DWORD,\
+						cxDesired:DWORD,\
+						cyDesired:DWORD,\
+						uFlags:DWORD
