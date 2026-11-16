@@ -1,3 +1,13 @@
+MSGSTRUCT STRUCT
+	hWnd DWORD ?
+	message DWORD ?
+	wParam DWORD ?
+	lParam DWORD ?
+	time DWORD ?
+	pt DWORD ?
+	lPrivate DWORD ?
+MSGSTRUCT ENDS
+
 ; System Call Prototypes and Sources for Information
 ; Source: https://learn.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-adjustwindowrect
 AdjustWindowRect PROTO,	lpRect:DWORD,\
