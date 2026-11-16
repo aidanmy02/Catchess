@@ -134,17 +134,3 @@ WinMain PROTO,			hInstance:DWORD,\
 						lpCmdLine:DWORD,\
 						nShowCmd:DWORD
 
-; System Call Prototypes and Sources for Information
-
-; Source: https://learn.microsoft.com/en-us/windows/win32/api/wingdi/nf-wingdi-transparentblt
-TransparentBlt PROTO,	hdcDest:DWORD,\
-						xoriginDest:DWORD,\
-						yoriginDest:DWORD,\
-						wDest:DWORD,\
-						hDest:DWORD,\
-						hdcSrc:DWORD,\
-						xoriginSrc:DWORD,\
-						yoriginSrc:DWORD,\
-						wSrc:DWORD,\
-						hSrc:DWORD,\
-						crTransparent:DWORD
