@@ -22,3 +22,23 @@ CreateThread PROTO,		lpThreadAttributes:DWORD,\
 						lpParameter:DWORD,\
 						dwCreationFlags:DWORD,\
 						lpThreadId:DWORD
+
+; Source: https://learn.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-createwindowexa
+CreateWindowExA PROTO,	dwExStyle:DWORD,\
+						lpClassName:DWORD,\
+						lpWindowName:DWORD,\
+						dwStyle:DWORD,\
+						x:DWORD,\
+						y:DWORD,\
+						nWidth:DWORD,\
+						nHeight:DWORD,\
+						hWndParent:DWORD,\
+						hMenu:DWORD,\
+						hInstance:DWORD,\
+						lpParam:DWORD
+
+; Source: https://learn.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-defwindowproca
+DefWindowProcA PROTO,	hWnd:DWORD,\
+						uMsg:DWORD,\
+						wParam:DWORD,\
+						lParam:DWORD
