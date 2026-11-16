@@ -69,3 +69,6 @@ GetMessageA PROTO,		lpMsg:DWORD,\
 						hWnd:DWORD,\
 						wMsgFilterMin:DWORD,\
 						wMsgFilterMax:DWORD
+
+; Source: https://learn.microsoft.com/en-us/windows/win32/api/libloaderapi/nf-libloaderapi-getmodulehandlea
+GetModuleHandleA PROTO,	lpModuleName:DWORD

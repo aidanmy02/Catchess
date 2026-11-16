@@ -142,11 +142,6 @@ WinMain PROTO,			hInstance:DWORD,\
 ; Source: https://learn.microsoft.com/en-us/windows/win32/api/libloaderapi/nf-libloaderapi-getmodulehandlea
 GetModuleHandleA PROTO,	lpModuleName:DWORD
 
-; TODO: remove
-; Source: https://learn.microsoft.com/en-us/windows/win32/api/heapapi/nf-heapapi-heapalloc
-HeapAlloc PROTO,		hHeap:DWORD,\
-						dwFlags:DWORD,\
-						dwBytes:DWORD
 
 
 ; Source: https://learn.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-loadcursora
