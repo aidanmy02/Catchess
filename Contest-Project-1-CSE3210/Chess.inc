@@ -210,9 +210,6 @@ SendMessageA PROTO,		hWnd:DWORD,\
 ShowWindow PROTO,		hWnd:DWORD,\
 						nCmdShow:DWORD
 
-; Source: https://learn.microsoft.com/en-us/windows/win32/api/synchapi/nf-synchapi-sleep
-Sleep PROTO,			dwMilliseconds:DWORD
-
 ; Source: https://learn.microsoft.com/en-us/windows/win32/api/wingdi/nf-wingdi-transparentblt
 TransparentBlt PROTO,	hdcDest:DWORD,\
 						xoriginDest:DWORD,\
@@ -225,6 +222,3 @@ TransparentBlt PROTO,	hdcDest:DWORD,\
 						wSrc:DWORD,\
 						hSrc:DWORD,\
 						crTransparent:DWORD
-
-; Source: https://learn.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-updatewindow
-UpdateWindow PROTO,		hWnd:DWORD
