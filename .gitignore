@@ -1,3 +1,15 @@
 # Ignore .vs directory
 # Source: https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository
 .vs/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Bb]in/
+[Oo]bj/
+*.user
+*.suo
+*.ipch
+*.VC.db
+*.sdf
+packages/
