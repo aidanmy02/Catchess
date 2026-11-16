@@ -51,3 +51,12 @@ ExitProcess PROTO,		dwExitCode:DWORD
 
 ; Source: https://learn.microsoft.com/en-us/windows/win32/api/processthreadsapi/nf-processthreadsapi-exitthread
 ExitThread PROTO,		dwExitCode:DWORD
+
+; Source: https://learn.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-endpaint
+EndPaint PROTO,			hWnd:DWORD,\
+						lpPaint:DWORD			; pointer to PAINTSTRUCT
+
+; Source: https://learn.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-fillrect
+FillRect PROTO,			hDC:DWORD,\
+						lprc:DWORD,\			; pointer to RECT
+						hbr:DWORD
