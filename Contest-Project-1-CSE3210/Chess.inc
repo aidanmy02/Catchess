@@ -135,12 +135,6 @@ WinMain PROTO,			hInstance:DWORD,\
 						nShowCmd:DWORD
 
 ; System Call Prototypes and Sources for Information
-; Source: https://learn.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-messageboxa					;
-MessageBoxA PROTO,		hWnd:DWORD,\
-						lpTEXT:DWORD,\
-						lpCaption:DWORD,\
-						uType:DWORD
-
 ; Source: https://learn.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-postmessagea
 PostMessageA PROTO,		hWnd:DWORD,\
 						msg:DWORD,\

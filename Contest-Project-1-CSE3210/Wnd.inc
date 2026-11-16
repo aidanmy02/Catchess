@@ -84,3 +84,9 @@ LoadImageA PROTO,		hInstance:DWORD,\
 						cxDesired:DWORD,\
 						cyDesired:DWORD,\
 						uFlags:DWORD
+
+; Source: https://learn.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-messageboxa					;
+MessageBoxA PROTO,		hWnd:DWORD,\
+						lpTEXT:DWORD,\
+						lpCaption:DWORD,\
+						uType:DWORD
