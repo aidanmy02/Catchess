@@ -35,5 +35,8 @@
     <None Include="Chess.inc">
       <Filter>Header Files</Filter>
     </None>
+    <None Include="Wnd.inc">
+      <Filter>Header Files</Filter>
+    </None>
   </ItemGroup>
 </Project>

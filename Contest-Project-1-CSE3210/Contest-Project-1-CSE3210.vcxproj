@@ -158,6 +158,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Chess.inc" />
+    <None Include="Wnd.inc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
