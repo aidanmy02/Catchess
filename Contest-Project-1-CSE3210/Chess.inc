@@ -135,19 +135,6 @@ WinMain PROTO,			hInstance:DWORD,\
 						nShowCmd:DWORD
 
 ; System Call Prototypes and Sources for Information
-
-
-
-
-; Source: https://learn.microsoft.com/en-us/windows/win32/api/libloaderapi/nf-libloaderapi-getmodulehandlea
-GetModuleHandleA PROTO,	lpModuleName:DWORD
-
-
-
-; Source: https://learn.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-loadcursora
-LoadCursorA PROTO,		hInstance:DWORD,\
-						lpCursorName:DWORD
-
 ; Source: https://learn.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-loadimagea
 LoadImageA PROTO,		hInstance:DWORD,\
 						lpName:DWORD,\
