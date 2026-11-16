@@ -137,9 +137,6 @@ WinMain PROTO,			hInstance:DWORD,\
 ; System Call Prototypes and Sources for Information
 
 
-; Source: https://learn.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-enablewindow
-EnableWindow PROTO,		hWnd:DWORD,\
-						bEnable:DWORD
 
 ; Source: https://learn.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-endpaint
 EndPaint PROTO,			hWnd:DWORD,\
@@ -149,10 +146,6 @@ EndPaint PROTO,			hWnd:DWORD,\
 FillRect PROTO,			hDC:DWORD,\
 						lprc:DWORD,\			; pointer to RECT
 						hbr:DWORD
-
-; Source: https://learn.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-getclientrect
-GetClientRect PROTO,	hWnd:DWORD,\
-						lpRect:DWORD
 
 ; Source: https://learn.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-getdc
 GetDC PROTO,			hWnd:DWORD
@@ -165,10 +158,6 @@ GetMessageA PROTO,		lpMsg:DWORD,\
 
 ; Source: https://learn.microsoft.com/en-us/windows/win32/api/libloaderapi/nf-libloaderapi-getmodulehandlea
 GetModuleHandleA PROTO,	lpModuleName:DWORD
-
-; TODO: remove
-; Source: https://learn.microsoft.com/en-us/windows/win32/api/heapapi/nf-heapapi-getprocessheap
-GetProcessHeap PROTO
 
 ; TODO: remove
 ; Source: https://learn.microsoft.com/en-us/windows/win32/api/heapapi/nf-heapapi-heapalloc
