@@ -135,13 +135,6 @@ WinMain PROTO,			hInstance:DWORD,\
 						nShowCmd:DWORD
 
 ; System Call Prototypes and Sources for Information
-; Source: https://learn.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-registerclassa
-RegisterClassExA PROTO,	wndClassPTR:DWORD
-
-; Source: https://learn.microsoft.com/en-us/windows/win32/api/wingdi/nf-wingdi-selectobject
-;		  https://learn.microsoft.com/en-us/previous-versions/windows/embedded/ee504566(v=winembedded.60)?redirectedfrom=MSDN
-SelectObject PROTO,		hDC:DWORD,\
-						hObject:DWORD
 ; Source: https://learn.microsoft.com/en-us/cpp/c-runtime-library/lock?view=msvc-170
 SendMessageA PROTO,		hWnd:DWORD,\
 						Msg:DWORD,\
