@@ -137,18 +137,6 @@ WinMain PROTO,			hInstance:DWORD,\
 ; System Call Prototypes and Sources for Information
 
 
-; Source: https://learn.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-destroywindow
-DestroyWindow PROTO,	hWnd:DWORD
-
-; Source: https://learn.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-dispatchmessage
-DispatchMessageA PROTO,	lpMsg:DWORD
-
-; Source: https://learn.microsoft.com/en-us/windows/win32/api/processthreadsapi/nf-processthreadsapi-exitprocess
-ExitProcess PROTO,		dwExitCode:DWORD
-
-; Source: https://learn.microsoft.com/en-us/windows/win32/api/processthreadsapi/nf-processthreadsapi-exitthread
-ExitThread PROTO,		dwExitCode:DWORD
-
 ; Source: https://learn.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-enablewindow
 EnableWindow PROTO,		hWnd:DWORD,\
 						bEnable:DWORD

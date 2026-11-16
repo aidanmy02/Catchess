@@ -42,3 +42,12 @@ DefWindowProcA PROTO,	hWnd:DWORD,\
 						uMsg:DWORD,\
 						wParam:DWORD,\
 						lParam:DWORD
+
+; Source: https://learn.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-dispatchmessage
+DispatchMessageA PROTO,	lpMsg:DWORD
+
+; Source: https://learn.microsoft.com/en-us/windows/win32/api/processthreadsapi/nf-processthreadsapi-exitprocess
+ExitProcess PROTO,		dwExitCode:DWORD
+
+; Source: https://learn.microsoft.com/en-us/windows/win32/api/processthreadsapi/nf-processthreadsapi-exitthread
+ExitThread PROTO,		dwExitCode:DWORD
