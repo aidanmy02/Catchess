@@ -135,15 +135,6 @@ WinMain PROTO,			hInstance:DWORD,\
 						nShowCmd:DWORD
 
 ; System Call Prototypes and Sources for Information
-; Source: https://learn.microsoft.com/en-us/cpp/c-runtime-library/lock?view=msvc-170
-SendMessageA PROTO,		hWnd:DWORD,\
-						Msg:DWORD,\
-						wParam:DWORD,\
-						lParam:DWORD
-
-; Source: https://learn.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-showwindow
-ShowWindow PROTO,		hWnd:DWORD,\
-						nCmdShow:DWORD
 
 ; Source: https://learn.microsoft.com/en-us/windows/win32/api/wingdi/nf-wingdi-transparentblt
 TransparentBlt PROTO,	hdcDest:DWORD,\
