@@ -30,6 +30,12 @@
     <MASM Include="Moves.asm">
       <Filter>Source Files</Filter>
     </MASM>
+    <MASM Include="WndAdapter.asm">
+      <Filter>Source Files</Filter>
+    </MASM>
+    <MASM Include="BoardAdapter.asm">
+      <Filter>Source Files</Filter>
+    </MASM>
   </ItemGroup>
   <ItemGroup>
     <None Include="Chess.inc">

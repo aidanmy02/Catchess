@@ -2,6 +2,7 @@
 INCLUDELIB Gdi32.lib	; Source:	https://learn.microsoft.com/en-us/windows/win32/gdi/windows-gdi
 INCLUDELIB Msimg32.lib	; Source:	https://learn.microsoft.com/en-us/windows/win32/api/wingdi/nf-wingdi-transparentblt
 
+; Structs
 MSGSTRUCT STRUCT
 	hWnd DWORD ?
 	message DWORD ?
@@ -11,6 +12,11 @@ MSGSTRUCT STRUCT
 	pt DWORD ?
 	lPrivate DWORD ?
 MSGSTRUCT ENDS
+
+POINT STRUCT
+	x WORD ?
+	y WORD ?
+POINT ENDS
 
 ; System Call Prototypes and Sources for Information
 ; Source: https://learn.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-adjustwindowrect
