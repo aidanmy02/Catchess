@@ -5,6 +5,21 @@ wndToBoard MACRO hMsg, hRet
 	MOV eax, (WNDMSG PTR [hMsg]).uMsg
 ENDM
 
+; @ Description: Converts a point structure to a BOARDCOORD
+wndToBoardPt MACRO
+	
+ENDM
+
+; @ Description: Converts an image code to a piece code
+wndToBoardhImg
+
+ENDM
+
+; @ Description: Converts a wnd color code a board sqrColor
+wndToBoardhBr
+
+ENDM
+
 boardToWnd MACRO hMsg, hRet
 	
 ENDM
