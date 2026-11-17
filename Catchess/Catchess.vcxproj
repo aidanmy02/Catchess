@@ -161,9 +161,11 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Board.inc" />
+    <None Include="BoardCodes.inc" />
     <None Include="BoardStructs.inc" />
     <None Include="Chess.inc" />
     <None Include="Wnd.inc" />
+    <None Include="WndCodes.inc" />
     <None Include="WndStructs.inc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

@@ -53,5 +53,11 @@
     <None Include="BoardStructs.inc">
       <Filter>Header Files</Filter>
     </None>
+    <None Include="BoardCodes.inc">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="WndCodes.inc">
+      <Filter>Header Files</Filter>
+    </None>
   </ItemGroup>
 </Project>
