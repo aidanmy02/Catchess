@@ -1,5 +1,7 @@
 INCLUDE Chess.inc
 INCLUDE Board.inc
+INCLUDE BoardStructs.inc
+INCLUDE BoardCodes.inc
 
 PUBLIC board
 PUBLIC curHL
