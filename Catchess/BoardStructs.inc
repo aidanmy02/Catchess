@@ -15,8 +15,8 @@ BOARDCOORD STRUCT
 BOARDCOORD ENDS
 
 BOARDMSG STRUCT
-	uMsg DWORD ?
-	coord BOARDCOORD <>
-	pc BYTE ?
-	sqrColor BYTE ?
+	uMsg DWORD ?	
+	coord BOARDCOORD <>		; coord of piece on board
+	pc BYTE ?				; piece
+	sqrColor BYTE ?			; color of square at coord
 BOARDMSG ENDS

@@ -160,6 +160,7 @@
     <MASM Include="WndManager.asm" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="AdapterCodes.inc" />
     <None Include="Board.inc" />
     <None Include="BoardCodes.inc" />
     <None Include="BoardStructs.inc" />
