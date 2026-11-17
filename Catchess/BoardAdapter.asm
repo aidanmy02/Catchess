@@ -20,9 +20,14 @@ BoardAdapter PROC
 	JZ adaptMoveMsg
 
 	adaptWndMsg:
+		wndToBoard
+		JMP done
 
 	adaptMoveMsg:
+		moveToBoard
+		JMP done
 
+	done:
 	RET 4
 BoardAdapter ENDP
 END
