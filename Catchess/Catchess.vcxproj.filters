@@ -47,5 +47,11 @@
     <None Include="Board.inc">
       <Filter>Header Files</Filter>
     </None>
+    <None Include="WndStructs.inc">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="BoardStructs.inc">
+      <Filter>Header Files</Filter>
+    </None>
   </ItemGroup>
 </Project>
