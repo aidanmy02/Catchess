@@ -17,14 +17,14 @@ ENDM
 
 ; @ Description: Converts a point to a board coord
 wndToBoardPt MACRO
-; @ Params:		eax:	contains point value
-; @ Result:		ax:		contains BOARDCOORD value
+; @ Params:		eax:	point value
+; @ Result:		ax:		board coord value
 	
 ENDM
 
 ; @ Description: Converts an image code to a piece code
 wndToBoardImg
-; @ Params:		eax:	contains image code
+; @ Params:		eax:	image code
 ; @ Result:		al:		piece code
 
 ENDM
@@ -41,16 +41,23 @@ boardToWnd MACRO hSrc, hDest
 ENDM
 
 ; @ Description: Converts a board coord to a point
-boardToWndPt MACRO
+boardToWndBc MACRO
 ; @ Params:		eax:	board coord value
 ; @ Result:		ax:		point value
 	
 ENDM
 
 ; @ Description: Converts an image code to a piece code
-boardToWndImg
+boardToWndPc
 ; @ Params:		eax:	piece code
 ; @ Result:		al:		image code
+
+ENDM
+
+; @ Description: Converts sqrColor code a wnd color code
+wndToBoardSqrColor
+; @ Params:		eax:	sqrColor code
+; @ Result:		al:		wnd color code
 
 ENDM
 
