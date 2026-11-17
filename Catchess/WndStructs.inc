@@ -1,4 +1,5 @@
 ; Structs
+; For message loop
 MSGSTRUCT STRUCT
 	hWnd DWORD ?
 	message DWORD ?
@@ -9,6 +10,7 @@ MSGSTRUCT STRUCT
 	lPrivate DWORD ?
 MSGSTRUCT ENDS
 
+; For sending and receiving points from the window
 POINT STRUCT
 	x WORD ?
 	y WORD ?
