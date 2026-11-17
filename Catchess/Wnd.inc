@@ -18,6 +18,14 @@ POINT STRUCT
 	y WORD ?
 POINT ENDS
 
+; Mirrors MOVESTRUCT used in BoardManager with Wnd relevant data
+WNDMSG STRUCT
+	uMsg DWORD ?
+	pt POINT <>
+	hImg DWORD ?
+	hBr DWORD ?
+WNDMSG ENDS
+
 ; System Call Prototypes and Sources for Information
 ; Source: https://learn.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-adjustwindowrect
 AdjustWindowRect PROTO,	lpRect:DWORD,\
