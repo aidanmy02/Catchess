@@ -4,6 +4,7 @@ INCLUDE WndCodes.inc
 INCLUDE BoardStructs.inc
 INCLUDE WndCodes.inc
 INCLUDE AdapterCodes.inc
+INCLUDE AdapterMacros.inc
 
 .code
 ; @ Description: Converts a struct containing data to BOARDMSG format
