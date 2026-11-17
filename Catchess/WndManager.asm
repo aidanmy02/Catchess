@@ -1,4 +1,5 @@
 INCLUDE Chess.inc
+INCLUDE WndStructs.inc
 INCLUDE Wnd.inc
 
 WndProc PROTO, wpHWnd:DWORD, wpUMsg:DWORD, wpWParam:DWORD, wpLParam:DWORD
