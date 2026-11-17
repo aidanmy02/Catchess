@@ -15,7 +15,7 @@ wndToBoard MACRO hSrc, hDest
 	MOV (WNDMSG PTR [hDest]).sqrColor
 ENDM
 
-; @ Description: Converts a point structure to a BOARDCOORD
+; @ Description: Converts a point to a board coord
 wndToBoardPt MACRO
 ; @ Params:		eax:	contains point value
 ; @ Result:		ax:		contains BOARDCOORD value
@@ -36,14 +36,28 @@ wndToBoardBr
 
 ENDM
 
-boardToWnd MACRO hMsg, hRet
+boardToWnd MACRO hSrc, hDest
 	
 ENDM
 
-boardToMove MACRO hMsg, hRet
+; @ Description: Converts a board coord to a point
+boardToWndPt MACRO
+; @ Params:		eax:	board coord value
+; @ Result:		ax:		point value
 	
 ENDM
 
-moveToBoard MACRO hMsg, hRet
+; @ Description: Converts an image code to a piece code
+boardToWndImg
+; @ Params:		eax:	piece code
+; @ Result:		al:		image code
+
+ENDM
+
+boardToMove MACRO hSrc, hDest
+	
+ENDM
+
+moveToBoard MACRO hSrc, hDest
 	
 ENDM
