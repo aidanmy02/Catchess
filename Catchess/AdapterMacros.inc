@@ -7,16 +7,22 @@ ENDM
 
 ; @ Description: Converts a point structure to a BOARDCOORD
 wndToBoardPt MACRO
+; @ Params:		eax:	contains point value
+; @ Result:		ax:		contains BOARDCOORD value
 	
 ENDM
 
 ; @ Description: Converts an image code to a piece code
-wndToBoardhImg
+wndToBoardImg
+; @ Params:		eax:	contains image code
+; @ Result:		al:		piece code
 
 ENDM
 
-; @ Description: Converts a wnd color code a board sqrColor
+; @ Description: Converts a wnd color code a board sqrColor code
 wndToBoardhBr
+; @ Params:		eax:	wnd color code
+; @ Result:		al:		sqrColor code
 
 ENDM
 

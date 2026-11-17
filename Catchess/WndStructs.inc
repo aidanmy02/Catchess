@@ -20,6 +20,6 @@ POINT ENDS
 WNDMSG STRUCT
 	uMsg DWORD ?
 	pt POINT <>
-	hImg DWORD ?
-	hBr DWORD ?
+	img DWORD ?
+	br DWORD ?
 WNDMSG ENDS
