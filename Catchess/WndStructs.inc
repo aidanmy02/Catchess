@@ -13,3 +13,11 @@ POINT STRUCT
 	x WORD ?
 	y WORD ?
 POINT ENDS
+
+; Mirrors MOVESTRUCT used in BoardManager with Wnd relevant data
+WNDMSG STRUCT
+	uMsg DWORD ?
+	pt POINT <>
+	hImg DWORD ?
+	hBr DWORD ?
+WNDMSG ENDS

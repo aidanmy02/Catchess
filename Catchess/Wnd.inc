@@ -2,18 +2,7 @@
 INCLUDELIB Gdi32.lib	; Source:	https://learn.microsoft.com/en-us/windows/win32/gdi/windows-gdi
 INCLUDELIB Msimg32.lib	; Source:	https://learn.microsoft.com/en-us/windows/win32/api/wingdi/nf-wingdi-transparentblt
 
-POINT STRUCT
-	x WORD ?
-	y WORD ?
-POINT ENDS
 
-; Mirrors MOVESTRUCT used in BoardManager with Wnd relevant data
-WNDMSG STRUCT
-	uMsg DWORD ?
-	pt POINT <>
-	hImg DWORD ?
-	hBr DWORD ?
-WNDMSG ENDS
 
 ; System Call Prototypes and Sources for Information
 ; Source: https://learn.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-adjustwindowrect
