@@ -1,5 +1,5 @@
 INCLUDE Chess.inc
-INCLUDE Wnd.inc
+INCLUDE Board.inc
 
 PUBLIC board
 PUBLIC curHL
