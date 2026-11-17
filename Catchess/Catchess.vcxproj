@@ -24,6 +24,7 @@
     <ProjectGuid>{40aaf5d8-8195-4f68-8044-8b3de191f6da}</ProjectGuid>
     <RootNamespace>ContestProject1CSE3210</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>Catchess</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -157,6 +158,7 @@
     <MASM Include="WndManager.asm" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Board.inc" />
     <None Include="Chess.inc" />
     <None Include="Wnd.inc" />
   </ItemGroup>
