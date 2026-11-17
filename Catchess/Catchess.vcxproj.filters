@@ -65,5 +65,11 @@
     <None Include="AdapterMacros.inc">
       <Filter>Header Files</Filter>
     </None>
+    <None Include="ChessCodes.inc">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="Config.inc">
+      <Filter>Header Files</Filter>
+    </None>
   </ItemGroup>
 </Project>

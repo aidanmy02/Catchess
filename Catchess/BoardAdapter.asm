@@ -20,11 +20,11 @@ BoardAdapter PROC
 	JZ adaptMoveMsg
 
 	adaptWndMsg:
-		wndToBoard NULL
+		wndToBoard esi, edi
 		JMP done
 
 	adaptMoveMsg:
-		moveToBoard NULL
+		moveToBoard esi, edi
 		JMP done
 
 	done:

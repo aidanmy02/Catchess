@@ -166,6 +166,8 @@
     <None Include="BoardCodes.inc" />
     <None Include="BoardStructs.inc" />
     <None Include="Chess.inc" />
+    <None Include="ChessCodes.inc" />
+    <None Include="Config.inc" />
     <None Include="Wnd.inc" />
     <None Include="WndCodes.inc" />
     <None Include="WndStructs.inc" />

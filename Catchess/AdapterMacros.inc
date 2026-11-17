@@ -2,7 +2,7 @@
 
 .code
 wndToBoard MACRO hMsg, hRet
-	MOV eax, (WNDMSG PTR hMsg).uMsg
+	MOV eax, (WNDMSG PTR [hMsg]).uMsg
 ENDM
 
 boardToWnd MACRO hMsg, hRet
