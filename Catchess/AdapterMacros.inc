@@ -1,15 +1,18 @@
-wndToBoard MACRO
+; hMsg and hRet must be registers that can be used for base-index ops
 
+.code
+wndToBoard MACRO hMsg, hRet
+	MOV eax, (WNDMSG PTR hMsg).uMsg
 ENDM
 
-boardToWnd MACRO
-
+boardToWnd MACRO hMsg, hRet
+	
 ENDM
 
-boardToMove MACRO
-
+boardToMove MACRO hMsg, hRet
+	
 ENDM
 
-moveToBoard MACRO
-
+moveToBoard MACRO hMsg, hRet
+	
 ENDM
