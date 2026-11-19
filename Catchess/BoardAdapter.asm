@@ -6,6 +6,10 @@ INCLUDE WndCodes.inc
 INCLUDE AdapterCodes.inc
 INCLUDE AdapterMacros.inc
 
+.data
+boardBuf BOARDMSG <>		; Buffers for info that needs to be transfered. All mutations happen to these.
+wndBuf WNDMSG <>			;	Copying to external adapt structs don at the end
+
 .code
 ; @ Description: Converts a struct containing data to BOARDMSG format
 BoardAdapter PROC
