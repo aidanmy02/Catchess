@@ -7,7 +7,20 @@ wndToBoardPt MACRO sqrLen, pt
 ;				pt		-	a point with x and y as words
 ;
 ; @ Result:		ax:		board coord value
+	PUSH ebx
+	PUSH edx
 	
+	PUSH sqrLen	; Move with push/pop in case eax, ebx are params
+	PUSH pt		;
+	POP eax		;
+	POP ebx		;
+	XOR edx, edx
+	DIV bx		; Get x coord of board coord
+	INC ax		;
+
+
+	POP edx
+	POP ebx
 ENDM
 
 ; @ Description: Converts an image code to a piece code
