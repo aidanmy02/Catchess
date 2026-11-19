@@ -1,21 +1,6 @@
 ; hMsg and hRet must be registers that can be used for base-index ops
 
 .code
-COMMENT @
-wndToBoard MACRO hSrc, hDest
-	MOV eax, (WNDMSG PTR [hSrc]).pt
-	wndToBoardPt
-	MOV (BOARDMSG PTR [hDest]).coord, ax
-
-	MOV eax, (WNDMSG PTR [hSrc]).img
-	wndToBoardImg
-	MOV (BOARDMSG PTR [hDest]).pc, al
-
-	MOV eax, (WNDMSG PTR [hSrc]).br
-	wndToBoardBr
-	MOV (BOARDMSG PTR [hDest]).sqrColor, al
-ENDM
-@
 ; @ Description: Converts a point to a board coord
 wndToBoardPt MACRO sqrLen, pt
 ; @ Params:		sqrLen	-	size of a square in the window
@@ -37,10 +22,6 @@ wndToBoardBr MACRO colorCode
 ; @ Params:		colorCode:	code for the color of the square in window
 ; @ Result:		al:			sqrColor code
 
-ENDM
-
-boardToWnd MACRO hSrc, hDest
-	
 ENDM
 
 ; @ Description: Converts a board coord to a point
