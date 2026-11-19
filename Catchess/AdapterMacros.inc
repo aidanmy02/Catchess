@@ -4,15 +4,15 @@
 wndToBoard MACRO hSrc, hDest
 	MOV eax, (WNDMSG PTR [hSrc]).pt
 	wndToBoardPt
-	MOV (WNDMSG PTR [hDest]).bc, ax
+	MOV (BOARDMSG PTR [hDest]).coord, ax
 
 	MOV eax, (WNDMSG PTR [hSrc]).img
 	wndToBoardImg
-	MOV (WNDMSG PTR [hDest]).pc
+	MOV (BOARDMSG PTR [hDest]).pc, al
 
 	MOV eax, (WNDMSG PTR [hSrc]).br
 	wndToBoardBr
-	MOV (WNDMSG PTR [hDest]).sqrColor
+	MOV (BOARDMSG PTR [hDest]).sqrColor, al
 ENDM
 
 ; @ Description: Converts a point to a board coord
@@ -23,14 +23,14 @@ wndToBoardPt MACRO
 ENDM
 
 ; @ Description: Converts an image code to a piece code
-wndToBoardImg
+wndToBoardImg MACRO
 ; @ Params:		eax:	image code
 ; @ Result:		al:		piece code
 
 ENDM
 
 ; @ Description: Converts a wnd color code a board sqrColor code
-wndToBoardBr
+wndToBoardBr MACRO
 ; @ Params:		eax:	wnd color code
 ; @ Result:		al:		sqrColor code
 
@@ -48,14 +48,14 @@ boardToWndBc MACRO
 ENDM
 
 ; @ Description: Converts an image code to a piece code
-boardToWndPc
+boardToWndPc MACRO
 ; @ Params:		eax:	piece code
 ; @ Result:		al:		image code
 
 ENDM
 
 ; @ Description: Converts sqrColor code a wnd color code
-wndToBoardSqrColor
+wndToBoardSqrColor MACRO
 ; @ Params:		eax:	sqrColor code
 ; @ Result:		al:		wnd color code
 

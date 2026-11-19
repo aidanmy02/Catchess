@@ -1,4 +1,4 @@
-; Structs
+; Struct definitions
 ; For message loop
 MSGSTRUCT STRUCT
 	hWnd DWORD ?

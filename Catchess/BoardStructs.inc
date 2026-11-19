@@ -1,3 +1,5 @@
+; Struct definitions
+; Initial layout of board
 BOARDSTRUCT STRUCT
 	_a BYTE WROOK,	WPAWN,	0,	0,	0,	0,	BPAWN,	BROOK
 	_b BYTE WKNIGHT,WPAWN,	0,	0,	0,	0,	BPAWN,	BKNIGHT
@@ -9,11 +11,13 @@ BOARDSTRUCT STRUCT
 	_h BYTE WROOK,	WPAWN,	0,	0,	0,	0,	BPAWN,	BROOK
 BOARDSTRUCT ENDS
 
+; Coordinate structure for board coordinates
 BOARDCOORD STRUCT
 	x BYTE ?
 	y BYTE ?
 BOARDCOORD ENDS
 
+; For passing messages
 BOARDMSG STRUCT
 	uMsg DWORD ?	
 	coord BOARDCOORD <>		; coord of piece on board
