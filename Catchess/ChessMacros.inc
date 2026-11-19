@@ -12,9 +12,6 @@ copyStruct MACRO structSize, hSrc, hDest
 	MOV edi, hDest
 	REP MOVSB
 
-	POP edi
-	POP esi
-
 	POP ecx
 	POP esi
 	POP edi

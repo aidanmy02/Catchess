@@ -31,7 +31,7 @@ BoardAdapter PROC
 
 	adaptWndMsg:
 		copyStruct sizeBoardMsg, esi, OFFSET wndBuf
-		wndToBoard esi, edi
+		CALL WndToBoard
 		JMP done
 
 	adaptMoveMsg:
@@ -43,4 +43,16 @@ BoardAdapter PROC
 	POP ebp
 	RET 4
 BoardAdapter ENDP
+
+WndToBoard PROC 
+	wndToBoardPt SQRLEN, wndBuf.pt
+	MOV boardBuf.coord, ax
+
+	wndToBoardImg wndBuf.img
+	MOV boardBuf.pc, al
+
+	wndToBoardBr wndBuf.br
+	MOV boardBuf.sqrColor, al
+WndToBoard ENDP
+
 END
