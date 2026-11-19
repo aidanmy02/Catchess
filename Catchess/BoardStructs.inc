@@ -24,3 +24,6 @@ BOARDMSG STRUCT
 	pc BYTE ?				; piece
 	sqrColor BYTE ?			; color of square at coord
 BOARDMSG ENDS
+
+; For passing messages
+EXTERNDEF boardAdapt:BOARDMSG

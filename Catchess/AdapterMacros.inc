@@ -16,23 +16,25 @@ wndToBoard MACRO hSrc, hDest
 ENDM
 
 ; @ Description: Converts a point to a board coord
-wndToBoardPt MACRO
-; @ Params:		eax:	point value
+wndToBoardPt MACRO sqrLen, pt
+; @ Params:		sqrLen	-	size of a square in the window
+;				pt		-	a point with x and y as words
+;
 ; @ Result:		ax:		board coord value
 	
 ENDM
 
 ; @ Description: Converts an image code to a piece code
-wndToBoardImg MACRO
-; @ Params:		eax:	image code
-; @ Result:		al:		piece code
+wndToBoardImg MACRO imgCode
+; @ Params:		imgCode:	the code for the image of the piece
+; @ Result:		al:			piece code
 
 ENDM
 
 ; @ Description: Converts a wnd color code a board sqrColor code
-wndToBoardBr MACRO
-; @ Params:		eax:	wnd color code
-; @ Result:		al:		sqrColor code
+wndToBoardBr MACRO colorCode
+; @ Params:		colorCode:	code for the color of the square in window
+; @ Result:		al:			sqrColor code
 
 ENDM
 

@@ -23,3 +23,6 @@ WNDMSG STRUCT
 	img DWORD ?
 	br DWORD ?
 WNDMSG ENDS
+
+; For message passing
+EXTERNDEF wndAdapt:WNDMSG
