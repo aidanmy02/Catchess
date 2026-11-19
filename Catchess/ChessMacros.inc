@@ -3,6 +3,20 @@ copyStruct MACRO stuctSize, hSrc, hDest
 ; @ Params:		structSize	-		Size of the struct
 ;				hSrc		-		Address of source struct
 ;				hDest		-		Address of destination struct
+	PUSH edi
+	PUSH esi
+	PUSH ecx
 
+	MOV ecx, structSize
+	MOV esi, hSrc
+	MOV edi, hDest
+	REP MOVSB
+
+	POP edi
+	POP esi
+
+	POP ecx
+	POP esi
+	POP edi
 
 ENDM
