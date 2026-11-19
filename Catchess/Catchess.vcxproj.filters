@@ -36,9 +36,6 @@
     <MASM Include="BoardAdapter.asm">
       <Filter>Source Files</Filter>
     </MASM>
-    <MASM Include="ChessMacros.asm">
-      <Filter>Source Files</Filter>
-    </MASM>
   </ItemGroup>
   <ItemGroup>
     <None Include="Chess.inc">
@@ -72,6 +69,9 @@
       <Filter>Header Files</Filter>
     </None>
     <None Include="Config.inc">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="ChessMacros.inc">
       <Filter>Header Files</Filter>
     </None>
   </ItemGroup>

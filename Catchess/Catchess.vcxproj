@@ -151,7 +151,9 @@
   <ItemGroup>
     <MASM Include="BoardAdapter.asm" />
     <MASM Include="BoardManager.asm" />
-    <MASM Include="ChessMacros.asm" />
+    <None Include="ChessMacros.inc">
+      <FileType>Document</FileType>
+    </None>
     <MASM Include="Init.asm" />
     <MASM Include="main.asm">
       <FileType>Document</FileType>

@@ -4,6 +4,5 @@ copyStruct MACRO stuctSize, hSrc, hDest
 ;				hSrc		-		Address of source struct
 ;				hDest		-		Address of destination struct
 
-ENDM
 
-END
+ENDM
