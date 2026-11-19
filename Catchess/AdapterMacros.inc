@@ -14,10 +14,19 @@ wndToBoardPt MACRO sqrLen, pt
 	PUSH pt		;
 	POP eax		;
 	POP ebx		;
-	XOR edx, edx
-	DIV bx		; Get x coord of board coord
+	
+	XOR edx, edx; Get x coord of board coord
+	DIV bx		;
 	INC ax		;
 
+	ROR eax, 16	; Move high word into ax
+	XOR edx, edx; Get y coord of board coord
+	DIV bx		;
+	INC ax		;
+
+	MOVZX ebx, ax	; Put coords in correct position
+	ROR eax, 16		;
+	MOV ah, bl		;
 
 	POP edx
 	POP ebx
