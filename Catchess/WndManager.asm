@@ -183,20 +183,6 @@ LR_LOADFROMFILE EQU 10h	; fuLoad			; Source: https://learn.microsoft.com/en-us/w
 ;			https://learn.microsoft.com/en-us/windows/win32/learnwin32/mouse-clicks
 WM_LBUTTONDOWN EQU 0201h
 
-; Codes for piece array offsets
-IMG_WP EQU 0
-IMG_WR EQU 1
-IMG_WN EQU 2
-IMG_WB EQU 3
-IMG_WQ EQU 4
-IMG_WK EQU 5
-IMG_BP EQU 6
-IMG_BR EQU 7
-IMG_BN EQU 8
-IMG_BB EQU 9
-IMG_BQ EQU 10
-IMG_BK EQU 11
-
 .code
 ; Implementation of WinMain for message passing to window
 WinMain PROC, hInstance:DWORD, hPrevInstance:DWORD, lpCmdLine:DWORD, nShowCmd:DWORD
