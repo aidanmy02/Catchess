@@ -1,4 +1,5 @@
 INCLUDE Chess.inc
+INCLUDE ChessMacros.inc
 INCLUDE WndStructs.inc
 INCLUDE WndCodes.inc
 INCLUDE BoardStructs.inc
@@ -17,6 +18,11 @@ BoardAdapter PROC
 ;				stack - Address for struct to be converted
 ;
 ; @ Return:		void
+	PUSH ebp
+	MOV ebp, esp
+
+	PUSH esi
+	MOV esi, [ebp + 8]
 
 	CMP al, ADAPT_WNDMSG
 	JZ adaptWndMsg
@@ -24,6 +30,7 @@ BoardAdapter PROC
 	JZ adaptMoveMsg
 
 	adaptWndMsg:
+		copyStruct sizeBoardMsg, esi, OFFSET wndBuf
 		wndToBoard esi, edi
 		JMP done
 
@@ -32,6 +39,8 @@ BoardAdapter PROC
 		JMP done
 
 	done:
+	POP esi
+	POP ebp
 	RET 4
 BoardAdapter ENDP
 END

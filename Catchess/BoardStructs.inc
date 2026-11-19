@@ -25,5 +25,8 @@ BOARDMSG STRUCT
 	sqrColor BYTE ?			; color of square at coord
 BOARDMSG ENDS
 
+; Size of structs
+sizeBoardMsg EQU SIZEOF BOARDMSG
+
 ; For passing messages
 EXTERNDEF boardAdapt:BOARDMSG
