@@ -1,9 +1,9 @@
 INCLUDE Chess.inc
 INCLUDE WndStructs.inc
-INCLUDE WndCodes.inc
+INCLUDE WndDef.inc
 INCLUDE BoardStructs.inc
-INCLUDE BoardCodes.inc
-INCLUDE AdapterCodes.inc
+INCLUDE BoardDef.inc
+INCLUDE AdapterDef.inc
 
 .code
 

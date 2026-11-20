@@ -1,6 +1,5 @@
 ; hMsg and hRet must be registers that can be used for base-index ops
 
-.code
 ; @ Description: Converts a point to a board coord
 wndToBoardPt MACRO sqrLen, pt
 ; @ Params:		sqrLen	-	size of a square in the window

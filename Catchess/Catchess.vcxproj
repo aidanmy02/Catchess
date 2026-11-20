@@ -163,16 +163,16 @@
     <MASM Include="WndManager.asm" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="AdapterCodes.inc" />
+    <None Include="AdapterDef.inc" />
     <None Include="AdapterMacros.inc" />
     <None Include="Board.inc" />
-    <None Include="BoardCodes.inc" />
+    <None Include="BoardDef.inc" />
     <None Include="BoardStructs.inc" />
     <None Include="Chess.inc" />
-    <None Include="ChessCodes.inc" />
+    <None Include="ChessDef.inc" />
     <None Include="Config.inc" />
     <None Include="Wnd.inc" />
-    <None Include="WndCodes.inc" />
+    <None Include="WndDef.inc" />
     <None Include="WndStructs.inc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

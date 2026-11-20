@@ -1,8 +1,8 @@
 INCLUDE Chess.inc
 INCLUDE Wnd.inc
 INCLUDE WndStructs.inc
-INCLUDE WndCodes.inc
-INCLUDE AdapterCodes.inc
+INCLUDE WndDef.inc
+INCLUDE AdapterDef.inc
 
 WndProc PROTO, wpHWnd:DWORD, wpUMsg:DWORD, wpWParam:DWORD, wpLParam:DWORD
 

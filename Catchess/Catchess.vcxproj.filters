@@ -53,19 +53,19 @@
     <None Include="BoardStructs.inc">
       <Filter>Header Files</Filter>
     </None>
-    <None Include="BoardCodes.inc">
+    <None Include="BoardDef.inc">
       <Filter>Header Files</Filter>
     </None>
-    <None Include="WndCodes.inc">
+    <None Include="WndDef.inc">
       <Filter>Header Files</Filter>
     </None>
-    <None Include="AdapterCodes.inc">
+    <None Include="AdapterDef.inc">
       <Filter>Header Files</Filter>
     </None>
     <None Include="AdapterMacros.inc">
       <Filter>Header Files</Filter>
     </None>
-    <None Include="ChessCodes.inc">
+    <None Include="ChessDef.inc">
       <Filter>Header Files</Filter>
     </None>
     <None Include="Config.inc">

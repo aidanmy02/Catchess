@@ -1,3 +1,5 @@
+SQRLEN EQU 60
+
 ; Codes for piece array offsets
 IMG_WP EQU 0
 IMG_WR EQU 1

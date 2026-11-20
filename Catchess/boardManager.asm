@@ -1,8 +1,8 @@
 INCLUDE Chess.inc
 INCLUDE Board.inc
 INCLUDE BoardStructs.inc
-INCLUDE BoardCodes.inc
-INCLUDE AdapterCodes.inc
+INCLUDE BoardDef.inc
+INCLUDE AdapterDef.inc
 
 PUBLIC board
 PUBLIC curHL

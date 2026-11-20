@@ -1,15 +1,18 @@
 INCLUDE Chess.inc
 INCLUDE ChessMacros.inc
 INCLUDE WndStructs.inc
-INCLUDE WndCodes.inc
+INCLUDE WndDef.inc
 INCLUDE BoardStructs.inc
-INCLUDE WndCodes.inc
-INCLUDE AdapterCodes.inc
+INCLUDE WndDef.inc
+INCLUDE AdapterDef.inc
 INCLUDE AdapterMacros.inc
 
 .data
 boardBuf BOARDMSG <>		; Buffers for info that needs to be transfered. All mutations happen to these.
 wndBuf WNDMSG <>			;	Copying to external adapt structs don at the end
+
+; Array that holds the char representation of each piece on the board at the offset of the wnd image codes
+pc5ImgAdapt BYTE 'P','R','N','B','Q','K','p','r','n','b','q','k',0
 
 .code
 ; @ Description: Converts a struct containing data to BOARDMSG format
